@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200401035359) do
+ActiveRecord::Schema.define(version: 20200401045026) do
 
   create_table "users", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -18,6 +18,17 @@ ActiveRecord::Schema.define(version: 20200401035359) do
     t.string "nickname"
     t.integer "kind"
     t.integer "level"
+  end
+
+  create_table "weapons", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "description"
+    t.integer "level"
+    t.integer "power_base"
+    t.string "power_step"
+    t.string "integer"
   end
 
 end
