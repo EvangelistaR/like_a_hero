@@ -40,6 +40,7 @@ group :development, :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   gem 'rspec-rails', '~> 3.8'
+  gem 'ffaker'
 end
 
 group :development do
