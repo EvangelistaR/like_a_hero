@@ -35,10 +35,9 @@ ActiveRecord::Schema.define(version: 20200420205332) do
     t.datetime "updated_at", null: false
     t.string "name"
     t.string "description"
-    t.integer "level"
     t.integer "power_base"
-    t.string "power_step"
-    t.string "integer"
+    t.integer "power_step"
+    t.integer "level", default: 1
   end
 
 end
